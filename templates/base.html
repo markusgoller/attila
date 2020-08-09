@@ -17,6 +17,12 @@
   <meta name="description" content="{{SITE_DESCRIPTION}}" />
   {% endif %}
 
+  <!-- including tipue search-->
+  <link href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" media="screen, projection" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/tipuesearch/tipuesearch.css">
+  <script src="{{ SITEURL }}/theme/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+  <script src="{{ SITEURL }}/theme/js/modernizr-2.0.js"></script>
+
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="origin" />
@@ -54,8 +60,6 @@
   {% endfor %}
 
   <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css" type="text/css" rel="stylesheet" />
-
-  <link rel="stylesheet" href="{{ SITEURL }}/theme/tipuesearch/tipuesearch.css">
 
   <!-- Code highlight color scheme -->
   {% if COLOR_SCHEME_CSS %}
